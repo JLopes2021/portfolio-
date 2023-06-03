@@ -81,7 +81,7 @@ function App() {
               Item 2
             </li>
             <li>
-              Item 3
+              Item 35
             </li>
           </ul>
       </footer>
