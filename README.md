@@ -1,2 +1,2 @@
-# portfolio-
-Esse será um pequeno site para acesso de meus trabalhos atuais
+# site-portfolio
+Site feito para demonstrar o portfólio

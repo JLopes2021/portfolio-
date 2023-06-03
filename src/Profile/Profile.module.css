@@ -1,0 +1,9 @@
+.name {
+    color: greenyellow;
+}
+.list{
+    text-align: center;
+    list-style:none;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}

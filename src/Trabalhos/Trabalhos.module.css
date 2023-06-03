@@ -1,0 +1,65 @@
+/*Fontes dos containers de trabalho
+Títulos: RocknRollOne
+font-family: 'RocknRoll One', sans-serif;
+
+Paragrafo: Kite One
+font-family: 'Kite One', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranga&family=RocknRoll+One&display=swap');
+
+.container_trabalhos {
+  align-items: center;
+  justify-content: center;
+}
+
+.h2 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 7vh;
+}
+
+.p {
+  font-family: 'Kite One', sans-serif;
+  font-size: 2vh;
+}
+
+.descricao {
+  font-weight: bolder;
+}
+
+
+.ionic {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+
+.ionic :hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+
+}
+
+.js {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.js :hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+
+}
+
+.outros {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.outros :hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+
+}
