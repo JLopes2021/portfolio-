@@ -71,19 +71,7 @@ function App() {
             </li>
           </ul>
 
-          
         </nav>
-        <ul className={styles.ul_right}>
-            <li>
-              Item 1
-            </li>
-            <li>
-              Item 2
-            </li>
-            <li>
-              Item 35
-            </li>
-          </ul>
       </footer>
 
     </div>

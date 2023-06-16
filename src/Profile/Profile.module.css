@@ -1,9 +1,28 @@
-.name {
-    color: greenyellow;
+.frameworks{
+    color: azure;
 }
-.list{
-    text-align: center;
-    list-style:none;
-    margin-left: 5vh;
-    margin-right: 5vh;
+.profile{
+   display: table-row;
+   text-align: center;
+   justify-content: center;
 }
+
+.profile h2{
+ color: azure;
+ margin-left: 2px;
+ margin-right: 2px;
+}
+
+.profile img {
+height: 35vh;
+}
+
+.profile p {
+    color: #08a400;
+    font-style: oblique;
+    font-size: 3vmin;
+    margin-left: 2px;
+    margin-right: calc(1vmax - 2px);
+    
+}
+

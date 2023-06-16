@@ -1,3 +1,4 @@
+import React from "react";
 import { trabalhos } from './InfosTrabalhos';
 import styles from './Trabalhos.module.css'
 
@@ -8,8 +9,8 @@ export default function List() {
     const js = trabalhos.filter(aplicacao =>
         aplicacao.language === 'JavaScript'
     );
-    const outros = trabalhos.filter(aplicacao => (aplicacao.framework === '' )
-        )
+    const outros = trabalhos.filter(aplicacao => (aplicacao.framework === '')
+    )
     return (
         <div className={styles.container_trabalhos}>
             <div className={styles.js}>
@@ -20,9 +21,10 @@ export default function List() {
                             <li key={aplicacao.id}>
                                 <p className={styles.p}>
                                     <b>{aplicacao.name}:</b>
-                                    {' Produzido em ' + aplicacao.language + ' '}
-                                    com o <span className={styles.nomeFrame}>{aplicacao.framework}</span>
                                 </p>
+                                <span className={styles.link}>
+                                    <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
+                                </span>
                             </li>
                         )}
                     </ul>
@@ -35,29 +37,31 @@ export default function List() {
                     <ul>
                         {ionic.map(aplicacao =>
                             <li key={aplicacao.id}>
-                                <p className={styles.p}>
-                                    <b>{aplicacao.name}:</b>
-                                    {' Produzido em ' + aplicacao.language + ' '}
-                                    com o <span className={styles.nomeFrame}>{aplicacao.framework}</span>
-                                </p>
-                            </li>
+                            <p className={styles.p}>
+                                <b>{aplicacao.name}:</b>
+                            </p>
+                            <span className={styles.link}>
+                                <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
+                            </span>
+                        </li>
                         )}
                     </ul>
                 </article>
             </div>
 
             <div className={styles.outros}>
-            <article>
+                <article>
                     <h2 className={styles.h2}>Outros</h2>
                     <ul>
                         {outros.map(aplicacao =>
-                            <li key={aplicacao.id}>
-                                <p className={styles.p}>
-                                    <b>{aplicacao.name}:</b>
-                                    {' Produzido em ' + aplicacao.language + ' '}
-                                     <span className={styles.descricao}>{aplicacao.descripcion}</span>
-                                </p>
-                            </li>
+                           <li key={aplicacao.id}>
+                           <p className={styles.p}>
+                               <b>{aplicacao.name}:</b>
+                           </p>
+                           <span className={styles.link}>
+                               <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
+                           </span>
+                       </li>
                         )}
                     </ul>
                 </article>
