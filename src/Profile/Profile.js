@@ -1,6 +1,5 @@
 import { pessoa } from './InfoProfile';
 import styles from './Profile.module.css'
-import Digita from './Digita'
 
 export default function List() {
     const listItems = pessoa.map(person =>
@@ -19,7 +18,6 @@ export default function List() {
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJQAyDru9uGNFQXtHis9fyeDDwvq3FZqzeVANJuD0yvevQKDRVdNwcbmIQKqNcTRfDSsqMW-aJi18CoJZ54KzmwgSfCKZEC1Scr_TTDwLpjcpNzUBQhUwoWrYt_StSUoGiNQi8zANUEsWUYSBXtCpOaLm70bWXAuJ_CxM9FmqLHq0G6SJHrxJSVTKqCQ/s320/Design%20sem%20nome%20(2).png"
                 alt="Jeff Profile"
             />
-            <h2><Digita text = "Testando se funciona" /></h2>
             <p><small>{listItems}</small></p>
         </div>
     );

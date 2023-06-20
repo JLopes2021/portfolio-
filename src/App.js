@@ -1,52 +1,32 @@
-import styles from './App.css'
 import { Link } from "react-scroll";
-import './App.css'
-import Profile from './Profile/Profile'
-import Trabalhos from './Trabalhos/Trabalhos'
+import './App.css';
+import Profile from './Profile/Profile';
+import Trabalhos from './Trabalhos/Trabalhos';
+import Navbar from './Layout/Navbar';
+import Escrever from './Trabalhos/Escrever/Escritas'
 
 function App() {
   return (
     <div className="App">
       <header className="nav">
-        <nav className="nav__container__actions">
-          <ul className={styles.ul}>
-            <li>
-              <Link activeClass="active" smooth spy to="about">
-                SOBRE MIM
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="projects">
-                PROJETOS
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="blog">
-                ????????
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="contact">
-                MEUS CONTATOS
-              </Link>
-            </li>
-            <li>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
-      <section id="about">
-        <Profile />
-      </section>
+      <div className="container_profile">
+        <section id="about">
+          <Profile />
+        </section>
+      </div>
       <section id="projects">
         <Trabalhos />
       </section>
-      <section id="blog">?????????</section>
+      <section id="blog">
+        <Escrever />
+      </section>
       <section id="contact">FALA AÍ, TERRA!</section>
 
       <footer className="nav_footer">
         <nav className="nav__container__actions_footer">
-          <ul className={styles.ul}>
+          <ul className="ul">
             <li>
               <Link activeClass="active" smooth spy to="about">
                 SOBRE MIM
@@ -67,14 +47,12 @@ function App() {
                 MEUS CONTATOS
               </Link>
             </li>
-            <li>
-            </li>
+            <li></li>
           </ul>
-
         </nav>
       </footer>
-
     </div>
   );
 }
-export default App
+
+export default App;

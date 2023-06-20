@@ -7,22 +7,32 @@
    justify-content: center;
 }
 
-.profile h2{
- color: azure;
- margin-left: 2px;
- margin-right: 2px;
-}
+/* Profile.module.css */
 
-.profile img {
-height: 35vh;
-}
-
-.profile p {
-    color: #08a400;
+.frameworks {
+    color: #14ff80;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile h2 {
+    color: #EEE9E9;
+    margin: 2px;
+  }
+  
+  .profile img {
+    height: 35vh;
+  }
+  
+  .profile p {
+    color: #FF1493;
     font-style: oblique;
     font-size: 3vmin;
-    margin-left: 2px;
-    margin-right: calc(1vmax - 2px);
-    
-}
-
+    margin: 2px calc(1vmax - 2px);
+  }
+  

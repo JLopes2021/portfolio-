@@ -1,0 +1,49 @@
+/* Navbar.css */
+
+.nav__container__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: bold;
+  color: #EEE9E9;
+}
+
+li:hover {
+  text-decoration: underline;
+  color: #08a400;
+  transform: scale(1.1);
+}
+
+li span {
+  position: relative;
+}
+
+li span::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #08a400;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+li:hover span::before {
+  transform: scaleX(1);
+}
