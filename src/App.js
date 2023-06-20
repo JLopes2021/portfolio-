@@ -11,11 +11,11 @@ function App() {
       <header className="nav">
         <Navbar />
       </header>
-      <div className="container_profile">
-        <section id="about">
+      <section id="about" className="section">
+        <div className="container">
           <Profile />
-        </section>
-      </div>
+        </div>
+      </section>
       <section id="projects">
         <Trabalhos />
       </section>
