@@ -1,0 +1,42 @@
+/* Profile.css */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #2F4F4F;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profissao {
+    font-size: 24px;
+    color: #FFD700; /* Amarelo */
+  }
+  
+  .linguagens {
+    color: #FF0000; /* Vermelho */
+  }
+  
+  .frameworks {
+    color: #00FF00; /* Verde */
+  }
+  
+  span {
+    color: #FF4500; /* Laranja */
+  }
+  
+  small {
+    color: #FFFFFF; /* Branco */
+    line-height: 1.5;
+  }
+  
+  /* Resto dos estilos CSS para o seu aplicativo... */
+  

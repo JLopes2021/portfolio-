@@ -1,67 +1,59 @@
 import React from "react";
 import { trabalhos } from './InfosTrabalhos';
-import styles from './Trabalhos.module.css'
+import './Trabalhos.css'
 
 export default function List() {
     const ionic = trabalhos.filter(aplicacao =>
-        aplicacao.framework === 'ionic'
+        aplicacao.framework === 'Mobile'
     );
     const js = trabalhos.filter(aplicacao =>
-        aplicacao.language === 'JavaScript'
+        aplicacao.language === 'WEB'
     );
-    const outros = trabalhos.filter(aplicacao => (aplicacao.framework === '')
-    )
+    const outros = trabalhos.filter(aplicacao => aplicacao.framework === '');
+
     return (
-        <div className={styles.container_trabalhos}>
-            <div className={styles.js}>
+        <div className="container_trabalhos">
+            <div className="js">
                 <article>
-                    <h2 className={styles.h2}>JS</h2>
-                    <ul>
+                    <h2 className="h2">Web</h2>
+                    <ul className="carrossel">
                         {js.map(aplicacao =>
                             <li key={aplicacao.id}>
-                                <p className={styles.p}>
-                                    <b>{aplicacao.name}:</b>
-                                </p>
-                                <span className={styles.link}>
-                                    <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
+                                <b>{aplicacao.name}:</b>
+                                <span className="link">
+                                    <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer"> Acesse aqui o projeto</a>
                                 </span>
                             </li>
                         )}
                     </ul>
                 </article>
-
             </div>
-            <div className={styles.ionic}>
+            <div className="ionic">
                 <article>
-                    <h2 className={styles.h2}>IONIC</h2>
-                    <ul>
+                    <h2 className="h2">Mobile</h2>
+                    <ul className="carrossel">
                         {ionic.map(aplicacao =>
                             <li key={aplicacao.id}>
-                            <p className={styles.p}>
                                 <b>{aplicacao.name}:</b>
-                            </p>
-                            <span className={styles.link}>
-                                <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
-                            </span>
-                        </li>
+                                <span className="link">
+                                    <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer"> Acesse aqui o projeto</a>
+                                </span>
+                            </li>
                         )}
                     </ul>
                 </article>
             </div>
-
-            <div className={styles.outros}>
+            <div className="outros">
                 <article>
-                    <h2 className={styles.h2}>Outros</h2>
-                    <ul>
+                    <h2 className="h2">Variados</h2>
+                    <ul className="carrossel">
                         {outros.map(aplicacao =>
-                           <li key={aplicacao.id}>
-                           <p className={styles.p}>
-                               <b>{aplicacao.name}:</b>
-                           </p>
-                           <span className={styles.link}>
-                               <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer">Acesse aqui o projeto</a>
-                           </span>
-                       </li>
+                            <li key={aplicacao.id}>
+                                <b>{aplicacao.name}:</b>
+                                <span className="link">
+                                    <a href={aplicacao.deploy} target="_blank" rel="noopener noreferrer"> Acesse aqui o projeto</a>
+                                </span>
+                            </li>
                         )}
                     </ul>
                 </article>

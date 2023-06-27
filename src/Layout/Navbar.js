@@ -16,13 +16,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link activeClass="active" smooth spy to="blog">
-            ????????
-          </Link>
-        </li>
-        <li>
           <Link activeClass="active" smooth spy to="contact">
-            MEUS CONTATOS
+            CONTATOS
           </Link>
         </li>
         <li></li>

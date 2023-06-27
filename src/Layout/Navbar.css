@@ -47,3 +47,14 @@ li span::before {
 li:hover span::before {
   transform: scaleX(1);
 }
+
+.nav__container__actions {
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.nav__container__actions:active {
+  background-color: #ff1a53;
+}

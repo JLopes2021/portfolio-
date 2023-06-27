@@ -2,7 +2,7 @@ export const trabalhos = [{
     id: 0,
     name: 'Aplicativo Filmes',
     language: 'Angular',
-    framework: 'ionic',
+    framework: 'Mobile',
     github: '',
     descripcion: '',
     deploy: 'https://ionic-tabs-filmes.vercel.app/'
@@ -10,23 +10,23 @@ export const trabalhos = [{
     id: 1,
     name: 'Aplicativo Nadadores',
     language: 'Angular',
-    framework: 'ionic',
+    framework: 'Mobile',
     github: 'https://github.com/JLopes2021/ionic_nadadores',
     descripcion: 'Aplicação que classifica os nadadores de acordo com a idade',
     deploy:'https://ionic-nadadores.vercel.app/home'
 }, {
     id: 2,
-    name: 'Aplicativo IMC',
+    name: 'Aplicativo Dados Numéricos',
     language: 'Angular',
-    framework: 'ionic',
-    github: '',
-    descripcion: '',
-    deploy:''
+    framework: 'Mobile',
+    github: 'https://github.com/JLopes2021/projetos-numeros-ionic',
+    descripcion: 'Trabalhando com Dados Numéricos',
+    deploy:'https://projetos-numeros-ionic.vercel.app/'
 },
 {
     id: 3,
     name: 'Recriação do TCC',
-    language: 'JavaScript',
+    language: 'WEB',
     framework: 'ReactJS',
     github: '',
     descripcion: '',
@@ -34,7 +34,7 @@ export const trabalhos = [{
 }, {
     id: 4,
     name: 'Portal de Notícias',
-    language: 'JavaScript',
+    language: 'WEB',
     framework: 'ReactJS',
     github: '',
     descripcion: '',
@@ -42,7 +42,7 @@ export const trabalhos = [{
 }, {
     id: 5,
     name: 'Flappy Bird',
-    language: 'JavaScript',
+    language: 'WEB',
     framework: '',
     github: '',
     descripcion: 'Projeto inspirado nas aulas do Dev Mário Souto',

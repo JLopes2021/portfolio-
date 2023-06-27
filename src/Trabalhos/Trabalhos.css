@@ -1,0 +1,45 @@
+.container_trabalhos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.container_trabalhos .h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #FFD700; /* Amarelo */
+  margin-bottom: 10px;
+}
+
+.container_trabalhos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container_trabalhos li {
+  color: #FFFFFF; /* Branco */
+  line-height: 1.5;
+}
+
+.container_trabalhos .link a {
+  color: #00FF00; /* Verde */
+  text-decoration: none;
+}
+
+/* Exemplo de carrossel */
+.container_trabalhos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.container_trabalhos ul li {
+  flex: 0 0 200px;
+}

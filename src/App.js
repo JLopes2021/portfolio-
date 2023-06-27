@@ -1,9 +1,11 @@
-import { Link } from "react-scroll";
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Profile from './Profile/Profile';
 import Trabalhos from './Trabalhos/Trabalhos';
+import Contato from './Profile/Contato/Contato'
 import Navbar from './Layout/Navbar';
-import Escrever from './Trabalhos/Escrever/Escritas'
 
 function App() {
   return (
@@ -11,45 +13,32 @@ function App() {
       <header className="nav">
         <Navbar />
       </header>
-      <section id="about" className="section">
-        <div className="container">
-          <Profile />
+      <Container>
+        <Row>
+          <Col >
+            <section id="about" className="section">
+              <Profile />
+            </section>
+          </Col>
+          <Col>
+            <section id="projects">
+              <Trabalhos />
+            </section>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <section id="contact">
+              <Contato />
+            </section>
+          </Col>
+        </Row>
+      </Container>
+      <footer>
+        
+        <div>
+        <Navbar />
         </div>
-      </section>
-      <section id="projects">
-        <Trabalhos />
-      </section>
-      <section id="blog">
-        <Escrever />
-      </section>
-      <section id="contact">FALA AÍ, TERRA!</section>
-
-      <footer className="nav_footer">
-        <nav className="nav__container__actions_footer">
-          <ul className="ul">
-            <li>
-              <Link activeClass="active" smooth spy to="about">
-                SOBRE MIM
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="projects">
-                PROJETOS
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="blog">
-                ????????
-              </Link>
-            </li>
-            <li>
-              <Link activeClass="active" smooth spy to="contact">
-                MEUS CONTATOS
-              </Link>
-            </li>
-            <li></li>
-          </ul>
-        </nav>
       </footer>
     </div>
   );
