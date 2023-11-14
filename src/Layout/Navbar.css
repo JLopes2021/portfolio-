@@ -20,11 +20,10 @@ li {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-weight: bold;
   color: #EEE9E9;
+  text-decoration: none;
 }
 
 li:hover {
-  text-decoration: underline;
-  color: #08a400;
   transform: scale(1.1);
 }
 
@@ -49,12 +48,9 @@ li:hover span::before {
 }
 
 .nav__container__actions {
-  background-color: #000000;
+  background-color: #000310;
   padding: 10px 20px;
   border-radius: 8px;
   width: 100%;
 }
 
-.nav__container__actions:active {
-  background-color: #ff1a53;
-}

@@ -22,14 +22,12 @@ function App() {
           </Col>
           <Col>
             <section id="projects">
-              <Trabalhos />
             </section>
           </Col>
         </Row>
         <Row>
           <Col>
             <section id="contact">
-              <Contato />
             </section>
           </Col>
         </Row>
@@ -37,7 +35,6 @@ function App() {
       <footer>
         
         <div>
-        <Navbar />
         </div>
       </footer>
     </div>
